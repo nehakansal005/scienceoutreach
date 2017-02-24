@@ -9,14 +9,14 @@
 </div>
   
    
-   <?php include'bottom.php'; ?>
+    <?php include'bottom.php'; ?>
        
-  
- 
+  </body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
-<!--<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
--->
-    
+    <script> 
+        window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')
+    </script>
  <script type="text/javascript">
         $.ajax({
             type: 'post',
@@ -31,11 +31,10 @@
 
         function loadAll(response) {
               
-         
+    
                    for(var i=0 ; i<2 ; i++){
-                   	try{
+                   	
                       var input = '<div class="row">';
-                    
                     
                    input +=  '<br>';
                input += '<div class="col-md-2 col-sm-3 text-center">';
@@ -59,9 +58,7 @@
                 input += '</div>';
        
        
-                    } catch(err){
-                      console.log(err);
-                    } 
+                     
                         
             
        
@@ -71,7 +68,7 @@
 
 
 
-</body>
+
 
 
    

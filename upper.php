@@ -80,6 +80,11 @@
       </ul>
     </nav>
   </div>
+  <style type="text/css">
+    .blog{
+      width:120px;height:120px; margin-left:10px;
+    }
+  </style>
 </header>
 
 <div id="masthead">  

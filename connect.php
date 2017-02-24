@@ -2,7 +2,7 @@
 
 try{
 
-$db = new PDO('mysql:host=localhost;dbname=scienceoutreach;charset=UTF8','root','');
+$data = new PDO('mysql:host=localhost;dbname=scienceoutreach;charset=UTF8','root','');
 
 // var_dump($db);
 

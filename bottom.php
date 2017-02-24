@@ -93,9 +93,12 @@
 
 
 
-    <script src="../ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-  </body>
+<script> 
+        window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')
+    </script>
 
 <!-- Mirrored from scienceoutreach.in/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 25 Sep 2016 10:49:24 GMT -->
 </html>
