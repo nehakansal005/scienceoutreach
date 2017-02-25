@@ -151,7 +151,7 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:black">Article<b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="posts.php" style="color:black"  >Physical Science</a></li>
+            <li><a href="posts.php" style="color:black" >Physical Science</a></li>
             <li><a href="posts.php" style="color:black" >Life Science</a></li>
             <li><a href="posts.php" style="color:black" >Environment &amp; Health</a></li>
             <li><a href="posts.php" style="color:black" >Technology</a></li>

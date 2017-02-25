@@ -1,6 +1,6 @@
 
 <div class="foot"> <!-- in custom sheet-->
- <div class="row">
+ <div class="row" style="margin-top: 40px;">
     <div class="col-md-offset-1 col-md-3">
      <!-- <p class="h1 head"> Science outreach </p>-->
       <ul class="list sec">
@@ -95,7 +95,9 @@
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    
+
+  <script src="js/bootstrap.min.js"></script>
 <script> 
         window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')
     </script>

@@ -1,9 +1,13 @@
 
 <!DOCTYPE html>
+
+   <link rel="stylesheet" type="text/css" href="jqueryui/jquery-ui.css">
+   <link rel="stylesheet" type="text/css" href="jqueryui/jquery-ui.structure.css">
+   <link rel="stylesheet" type="text/css" href="jqueryui/jquery-ui.theme.css">
 <?php  include'upper.php'; ?>
 <div class="container " style="height:1000px; width: 1140px; background-color:white; border-radius: 7px; margin-top:15px;">
         
-      <div class="container" id ="post">  
+      <div class="container" id ="selected_post">  
         
       </div>
 </div>
@@ -21,7 +25,7 @@
         $.ajax({
             type: 'post',
             dataType: 'jsonp',
-            data: {key: 'postk'},
+            data: {key: sel_key},
             url: 'index1.php',
             success: loadAll 
             
@@ -65,7 +69,7 @@
                         
             
        
-       $('#post').append(input);}}
+       $('#selected_post').append(input);}}
         
     </script>
 
