@@ -76,7 +76,7 @@ include_once ('upper.php');
             <div class="">
             <div class="grid mask">
             <figure>
-             <a  data-toggle="modal" data-target="#myModal"><img src="img/sm.jpg" alt="" style="height:320px;" class="img-responsive" ></a>
+             <a  data-toggle="modal" data-target="#myModal"><img src="img/sm.jpg" alt="" style="height:325px;" class="img-responsive" ></a>
               <!-- <figcaption>
                 <h5>TWITTER STATUS</h5>
              <a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>              </figcaption> --><!-- /figcaption -->

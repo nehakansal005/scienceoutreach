@@ -1,4 +1,7 @@
 
+
+
+
 <div class="foot"> <!-- in custom sheet-->
  <div class="row" style="margin-top: 40px;">
     <div class="col-md-offset-1 col-md-3">
@@ -8,7 +11,7 @@
         <li> <a href="aboutus.php">  About us</a> </li>
         <li> <a href="team.php">  Team</a> </li>
         <li> <a href="contactus.php"> Contact us </a></li>
-         </ul>
+          </ul>
 
     </div>
     <div class="col-md-4">
