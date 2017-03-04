@@ -49,7 +49,7 @@
                 input += response[i].heading;
                 input += '</a></h3>';
                 input += '<p class="inside col-xs-12 ">';
-                input += response[i].one_line;
+                input += response[i].one_line + '....';
                 input += '<a href="blogg/' + ' " class="anchor">';
                 input += 'Read more';
                 input += '</a>';

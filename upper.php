@@ -151,11 +151,12 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:black">Article<b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="posts.php" style="color:black"  >Physical Science</a></li>
-            <li><a href="posts.php" style="color:black" >Life Science</a></li>
-            <li><a href="posts.php" style="color:black" >Environment &amp; Health</a></li>
-            <li><a href="posts.php" style="color:black" >Technology</a></li>
-            <li><a href="posts.php" style="color:black" >Mathematics</a></li>
+            <li><a href="posts.php" style="color:black" id="physical_science" onclick="call()" value="physical_science">Physical Science</a></li>
+            <li><a href="posts.php" style="color:black" id="life_science"  onclick="call()">Life Science</a></li>
+            <li><a href="posts.php" style="color:black" id="environment"  onclick="call()" >Environment &amp; Health</a></li>
+            <li><a href="posts.php" style="color:black" id="technology"  onclick="call()">Technology</a></li>
+            <li><a href="posts.php" style="color:black" id="mathematics"  onclick="call()">Mathematics</a></li>
+            <!-- these call functions are defind in posts.php for fetching-->
           </ul>
         </li>
          <li ><a href="#" style="color:black" >Interview</a></li>
@@ -183,7 +184,7 @@
         </li> 
         
      <!--  <li ><a href="#" style="color:black" >Change Stories</a></li>-->
-        <li ><a href="http://error404.000webhost.com/?" style="color:black">Event Calender</a></li>
+        <li ><a href="eventcalander.php" style="color:black">Event Calender</a></li>
         
      
           

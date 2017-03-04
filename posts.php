@@ -20,17 +20,40 @@
 
 <!--<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
 -->
-    
- <script type="text/javascript">
+    <script type="text/javascript">
+//     
+//var sel_key={value:'postk'};
+
+$(document).ready(function(){
+
+  $('#physical_science').click(function(){
+  
         $.ajax({
             type: 'post',
             dataType: 'jsonp',
-            data: {key: sel_key},
+            data: {key: 'physical_science'},
             url: 'index1.php',
             success: loadAll 
-            
+
         });
 
+  });
+
+  $('#mathematics').click(function(){
+     
+        $.ajax({
+            type: 'post',
+            dataType: 'jsonp',
+            data: {key: 'postk'},
+            url: 'index1.php',
+            success: loadAll 
+
+        });
+
+  });
+
+
+  });
 
 
         function loadAll(response) {
@@ -54,7 +77,7 @@
                 input += response[i].heading;
                 input += '</a></h3>';
                 input += '<p class="inside col-xs-12 ">';
-                input += response[i].one_line;
+                input += response[i].one_line+ '....';
                 input += '<a href="blogg/' + ' " class="anchor">';
                 input += 'Read more';
                 input += '</a>';

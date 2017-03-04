@@ -34,9 +34,9 @@ $result = $data->prepare("SELECT * FROM post_table");
 		
     }}
 
-    	if($_POST['key'] == "maths") {
 	
 
+    	if($_POST['key'] == "mathematics") {
 
 $result = $data->prepare("SELECT * FROM post_table WHERE category=:type");
   
