@@ -1,123 +1,99 @@
-
 <!DOCTYPE html>
+<html lang="en">
+<?php include 'post_upper.php'; ?>
 
-   <link rel="stylesheet" type="text/css" href="jqueryui/jquery-ui.css">
-   <link rel="stylesheet" type="text/css" href="jqueryui/jquery-ui.structure.css">
-   <link rel="stylesheet" type="text/css" href="jqueryui/jquery-ui.theme.css">
-<?php  include'upper.php'; ?>
-<div class="container " style="height:1000px; width: 1140px; background-color:white; border-radius: 7px; margin-top:15px;">
-        
-      <div class="container" id ="selected_post">  
-        
-      </div>
+
+<div id="main_box">
+    
 </div>
-  
-   
-   <?php include'bottom.php'; ?>
-       
-  
- 
 
-<!--<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
--->
-    <script type="text/javascript">
-//     
-//var sel_key={value:'postk'};
 
-$(document).ready(function(){
 
-  $('#physical_science').click(function(){
-  
-        $.ajax({
-            type: 'post',
-            dataType: 'jsonp',
-            data: {key: 'physical_science'},
-            url: 'index1.php',
-            success: loadAll 
 
-        });
+<?php include 'bottom.php'; ?>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
-  });
-
-  $('#mathematics').click(function(){
-     
+    <script> 
+        window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')
+    </script>
+ <script type="text/javascript">
         $.ajax({
             type: 'post',
             dataType: 'jsonp',
             data: {key: 'postk'},
-            url: 'index1.php',
+            url: 'index1_post.php',
             success: loadAll 
-
+            
         });
 
-  });
-
-
-  });
 
 
         function loadAll(response) {
               
-         
-                   for(var i=0 ; i<2 ; i++){
-                   	try{
-                      var input = '<div class="row">';
+    
+                   for(var i=0 ; i<1 ; i++){
+                    var input = '<header class="image-bg-fluid-height">';
+                    input += '<img class="img-responsive" src="blogg/img/'+ response[i].main_image + '" alt="image">';
+                      input += '<div style="height:150px; background-color: grey; color: white; ">';
+                      input += '</header>';
                     
-                    
-                   input +=  '<br>';
-               input += '<div class="col-md-2 col-sm-3 text-center">';
-               input += '<a href="blogg/">';
-               input += '<img alt="" class="img-circle img-responsive blog"';
-                input+=  '   src="img/' + response[i].circle_image + '">'
-               input +='</a>';
-               input +='</div>';
-               input += '<div class="col-md-10 col-sm-9">';
-               input += '<h3>';
-                input += '<a href="blogg/ " class="left">';
-                input += response[i].heading;
-                input += '</a></h3>';
-                input += '<p class="inside col-xs-12 ">';
-                input += response[i].one_line+ '....';
-                input += '<a href="blogg/' + ' " class="anchor">';
-                input += 'Read more';
-                input += '</a>';
-                input += '</p>';
-                input += '</div>';
-                input += '</div>';
-       
-       
-                    } catch(err){
-                      console.log(err);
-                    } 
-                        
-            
-       
-       $('#selected_post').append(input);}}
+                   input +=  '<div class="row">';
+               input += '<div class="col-lg-11 col-lg-offset-1 hover">';
+              input += '<h1 class="section-heading" style="margin-bottom: 0px;">';
+              input += response[i].tag_line;
+              input += '</h1>';
+              input += '<p style="text-align: center;text-justify: inter-word; font-family:Lora,\'Times New Roman\',serif; font-size: 2em; margin-top: 0px;">';
+              input += 'Author:'+response[i].author_name;
+              input += '</p>';
+              input += '</div>';
+              input += '</div>';
+              input += '</div>';
+              input += '<br>';
+              input += '<article>';
+              input += '<div class="container">';
+              input += '<div class="row" style="font-size: 1.3em;">';
+              input += '<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1" >';
+              input += '<p style="text-align: justify;text-justify: inter-word; font-family:Lora,\'Times New Roman\',serif;">';
+              input += response[i].first_para;
+              input += '</p>';
+               input += '<p style="text-align: justify;text-justify: inter-word; font-family:Lora,\'Times New Roman\',serif;">';
+              input += response[i].second_para;
+              input += '</p>';
+              input += '<img src="blogg/img/' + response[i].first_image + '"class="img-responsive"';
+                input += '<p style="text-align: justify;text-justify: inter-word; font-family:Lora,\'Times New Roman\',serif;">';
+              input += response[i].third_para;
+              input += '</p>';
+                input += '<p style="text-align: justify;text-justify: inter-word; font-family:Lora,\'Times New Roman\',serif;">';
+              input += response[i].fourth_para;
+              input += '</p>';
+              input += '</br>';
+              input += '</ul>';
+              input += '</div>';
+              input += '</div>';
+              input += '</div>';
+              input += '</article>';
+                            
+
+       $('#main_box').append(input);}}
         
     </script>
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
 </body>
 
-
-   
-
-
-
-
-
-<!-- Mirrored from scienceoutreach.in/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 25 Sep 2016 10:49:24 GMT -->
 </html>
-<!-- Hosting24 Analytics Code -->
-
-<!-- Hosting24 Analytics Code -->
-<script type="text/javascript" src="http://stats.hosting24.com/count.php"></script>
-<!-- End Of Analytics Code -->
-
-<!-- Hosting24 Analytics Code -->
-<script type="text/javascript" src="http://stats.hosting24.com/count.php"></script>
-<!-- End Of Analytics Code -->
-
-<!-- Hosting24 Analytics Code -->
-<script type="text/javascript" src="http://stats.hosting24.com/count.php"></script>

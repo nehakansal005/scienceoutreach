@@ -6,7 +6,7 @@ include 'upper.php';?>
   
 <!-- Mirrored from scienceoutreach.in/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 25 Sep 2016 10:49:07 GMT -->
 
-<div class="container " style="width: 1140px; min-height: 500px; background-color:white; border-radius: 7px; margin-top:15px;">
+<div class="container " style="width: 1140px; min-height: 500px; background-color:white; border-radius: 7px; margin-top:15px;" id="selected_post">
    
 
     <section class="" id="about">

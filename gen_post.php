@@ -31,11 +31,10 @@
         function loadAll(response) {
               
     
-                   for(var i=0 ; i<1 ; i++){
-                    var input = '<header class="image-bg-fluid-height">';
-                    input += '<img class="img-responsive" src="blogg/img/'+ response[i].main_image + '" alt="image">';
-                      input += '<div style="height:150px; background-color: grey; color: white; ">';
+                   for(var i=0 ; i<1 ; i++){ 
+                      input = '<header class="intro-header" style="background-image: url(\'blogg/img/shobhamam.jpg\')">'
                       input += '</header>';
+                      input += '<div style="height:150px; background-color: grey; color: white; ">';
                     
                    input +=  '<div class="row">';
                input += '<div class="col-lg-11 col-lg-offset-1 hover">';

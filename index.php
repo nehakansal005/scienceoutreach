@@ -127,7 +127,7 @@ include_once ('upper.php');
     <div class="col-md-12"> 
       
       <div class="panel">
-        <div class="panel-body">
+        <div class="panel-body" id="selected_post">
           
           
           

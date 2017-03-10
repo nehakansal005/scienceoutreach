@@ -7,7 +7,7 @@ include 'upper.php';
 <!-- Mirrored from scienceoutreach.in/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 25 Sep 2016 10:49:07 GMT -->
 
 <!-- Mirrored from scienceoutreach.in/contactus.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Feb 2017 11:53:54 GMT -->
-<div class="container " style="min-height:500px; width: 1140px; background-color:white; border-radius: 7px; margin-top:15px;">
+<div class="container " style="min-height:500px; width: 1140px; background-color:white; border-radius: 7px; margin-top:15px;" id="selected_post">
 <div class="row">
 
 <div class="col-md-6 col-sm-12"><a href="mailto:scienceoutreachdu@gmail.com" style="color:blue; margin-right: 0px; " class=" btn btn-lg "><span class="glyphicon glyphicon-envelope sec" style="height:10px; width:10px;"></span></a>

@@ -64,6 +64,128 @@ $result = $data->prepare("SELECT * FROM post_table WHERE category=:type");
 		
 		
     }}
+    	if($_POST['key'] == "physical_science") {
+	
+
+
+$result = $data->prepare("SELECT * FROM post_table");
+  
+    
+	$result->execute();
+	$rowcount=$result->rowCount();
+   
+  
+
+	$callback = isset($_REQUEST['callback']) ? $_REQUEST['callback'] : false;
+
+	
+    if ($callback) {
+		header('Content-Type: application/javascript');
+		echo $callback.'('.json_encode($result->fetchAll(PDO::FETCH_OBJ)).')';
+
+        
+		
+		
+	} else {
+		header('Content-Type: application/json');
+		echo json_encode($result->fetchAll(PDO::FETCH_OBJ));
+
+		
+		
+		
+    }}
+
+   	if($_POST['key'] == "technology") {
+	
+
+
+$result = $data->prepare("SELECT * FROM post_table");
+  
+    
+	$result->execute();
+	$rowcount=$result->rowCount();
+   
+  
+
+	$callback = isset($_REQUEST['callback']) ? $_REQUEST['callback'] : false;
+
+	
+    if ($callback) {
+		header('Content-Type: application/javascript');
+		echo $callback.'('.json_encode($result->fetchAll(PDO::FETCH_OBJ)).')';
+
+        
+		
+		
+	} else {
+		header('Content-Type: application/json');
+		echo json_encode($result->fetchAll(PDO::FETCH_OBJ));
+
+		
+		
+		
+    }}
+    	if($_POST['key'] == "life_science") {
+	
+
+
+$result = $data->prepare("SELECT * FROM post_table");
+  
+    
+	$result->execute();
+	$rowcount=$result->rowCount();
+   
+  
+
+	$callback = isset($_REQUEST['callback']) ? $_REQUEST['callback'] : false;
+
+	
+    if ($callback) {
+		header('Content-Type: application/javascript');
+		echo $callback.'('.json_encode($result->fetchAll(PDO::FETCH_OBJ)).')';
+
+        
+		
+		
+	} else {
+		header('Content-Type: application/json');
+		echo json_encode($result->fetchAll(PDO::FETCH_OBJ));
+
+		
+		
+		
+    }}
+  	if($_POST['key'] == "environment") {
+	
+
+
+$result = $data->prepare("SELECT * FROM post_table");
+  
+    
+	$result->execute();
+	$rowcount=$result->rowCount();
+   
+  
+
+	$callback = isset($_REQUEST['callback']) ? $_REQUEST['callback'] : false;
+
+	
+    if ($callback) {
+		header('Content-Type: application/javascript');
+		echo $callback.'('.json_encode($result->fetchAll(PDO::FETCH_OBJ)).')';
+
+        
+		
+		
+	} else {
+		header('Content-Type: application/json');
+		echo json_encode($result->fetchAll(PDO::FETCH_OBJ));
+
+		
+		
+		
+    }}
+
 
 
 ?>

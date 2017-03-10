@@ -6,7 +6,7 @@ include 'upper.php';?>
 <!-- Mirrored from scienceoutreach.in/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 25 Sep 2016 10:49:07 GMT -->
 
 <!-- Mirrored from scienceoutreach.in/team.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Feb 2017 11:53:48 GMT -->
-<div class="container " style="width: 1140px; background-color:white; border-radius: 7px; margin-top:15px;">
+<div class="container " style="width: 1140px; background-color:white; border-radius: 7px; margin-top:15px;" id="selected_post">
        <div class="container-fluid">
             <div class="row">
                 <div  class="col-lg-8 col-lg-offset-2 text-center">

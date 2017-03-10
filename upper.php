@@ -151,11 +151,11 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" style="color:black">Article<b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="posts.php" style="color:black" id="physical_science" onclick="call()" value="physical_science">Physical Science</a></li>
-            <li><a href="posts.php" style="color:black" id="life_science"  onclick="call()">Life Science</a></li>
-            <li><a href="posts.php" style="color:black" id="environment"  onclick="call()" >Environment &amp; Health</a></li>
-            <li><a href="posts.php" style="color:black" id="technology"  onclick="call()">Technology</a></li>
-            <li><a href="posts.php" style="color:black" id="mathematics"  onclick="call()">Mathematics</a></li>
+            <li><a  style="color:black" id="physical_science" value="physical_science">Physical Science</a></li>
+            <li><a  style="color:black" id="life_science"  >Life Science</a></li>
+            <li><a  style="color:black" id="environment"  >Environment &amp; Health</a></li>
+            <li><a  style="color:black" id="technology" >Technology</a></li>
+            <li><a style="color:black" id="mathematics">Mathematics</a></li>
             <!-- these call functions are defind in posts.php for fetching-->
           </ul>
         </li>
@@ -200,4 +200,131 @@
 
   
 </div>
+
+
+
+ 
+   
+
+<!--<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+-->
+    <script type="text/javascript">
+//     
+//var sel_key={value:'postk'};
+
+
+
+  $('#physical_science').click(function(){
+   $("#selected_post").empty();
+        $.ajax({
+           type: 'post',
+         dataType: 'jsonp',
+        data: {key: 'physical_science'},
+            url: 'index1.php',
+            success: loadAll 
+
+     });
+
+   });
+
+  $('#environment').click(function(){
+     $("#selected_post").empty();
+        $.ajax({
+            type: 'post',
+            dataType: 'jsonp',
+            data: {key: 'environment'},
+            url: 'index1.php',
+            success: loadAll 
+
+        });
+
+ });
+  $('#mathematics').click(function(){
+     $("#selected_post").empty();
+        $.ajax({
+            type: 'post',
+            dataType: 'jsonp',
+            data: {key: 'mathematics'},
+            url: 'index1.php',
+            success: loadAll 
+
+        });
+
+ });
+  $('#life_science').click(function(){
+     $("#selected_post").empty();
+        $.ajax({
+            type: 'post',
+            dataType: 'jsonp',
+            data: {key: 'life_science'},
+            url: 'index1.php',
+            success: loadAll 
+
+        });
+
+ });
+  $('#technology').click(function(){
+     $("#selected_post").empty();
+        $.ajax({
+            type: 'post',
+            dataType: 'jsonp',
+            data: {key: 'technology'},
+            url: 'index1.php',
+            success: loadAll 
+
+        });
+
+ });
+      
+
+  
+      
+
+        function loadAll(response) {
+              
+         
+                   for(var i=0 ; i<2 ; i++){
+                    try{
+                      var input = '<div class="row">';
+                    
+                    
+                   input +=  '<br>';
+               input += '<div class="col-md-2 col-sm-3 text-center">';
+               input += '<a href="blogg/">';
+               input += '<img alt="" class="img-circle img-responsive blog"';
+                input+=  '   src="img/' + response[i].circle_image + '">'
+               input +='</a>';
+               input +='</div>';
+               input += '<div class="col-md-10 col-sm-9">';
+               input += '<h3>';
+                input += '<a href="blogg/ " class="left">';
+                input += response[i].heading;
+                input += '</a></h3>';
+                input += '<p class="inside col-xs-12 ">';
+                input += response[i].one_line+ '....';
+                input += '<a href="blogg/' + ' " class="anchor">';
+                input += 'Read more';
+                input += '</a>';
+                input += '</p>';
+                input += '</div>';
+                input += '</div>';
+       
+       
+                    } catch(err){
+                      console.log(err);
+                    } 
+                        
+            
+       
+       $('#selected_post').append(input);}}
+        
+    </script>
+       
+  
+ 
+
+<!--<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+-->
+   
+
 </html>

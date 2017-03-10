@@ -33,38 +33,80 @@
               
     
                    for(var i=0 ; i<2 ; i++){
-                    
+                    var ids = response[i].id;
                       var input = '<div class="row">';
                     
                    input +=  '<br>';
                input += '<div class="col-md-2 col-sm-3 text-center">';
-               input += '<a href="blogg/">';
+              
                input += '<img alt="" class="img-circle img-responsive blog"';
                 input+=  '   src="img/' + response[i].circle_image + '">'
+                 input+='<p>'+ ids + '</p>';
                input +='</a>';
                input +='</div>';
                input += '<div class="col-md-10 col-sm-9">';
                input += '<h3>';
-                input += '<a href="blogg/ " class="left">';
+                input += '<a href="get_post.php" class="left">';
                 input += response[i].heading;
                 input += '</a></h3>';
                 input += '<p class="inside col-xs-12 ">';
                 input += response[i].one_line + '....';
-                input += '<a href="blogg/' + ' " class="anchor">';
+                input += '<a href="get_post.php' + ' " class="anchor">';
                 input += 'Read more';
                 input += '</a>';
                 input += '</p>';
                 input += '</div>';
                 input += '</div>';
        
-       
+           
                      
                         
             
        
        $('#post').append(input);}}
+
+
+                  
+     
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         
     </script>
+
+
+
 
 
 
